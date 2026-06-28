@@ -31,7 +31,6 @@
             <artifactId>webdrivermanager</artifactId>
             <version>6.3.4</version>
         </dependency>
-
     </dependencies>
 
     <properties>
