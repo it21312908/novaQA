@@ -12,7 +12,7 @@ public class ExtentManager {
         if (extent == null) {
 
             ExtentSparkReporter spark =
-                    new ExtentSparkReporter("reports/ExtentReport.html");
+                    new ExtentSparkReporter("extent-reports/reports/ExtentReport.html");
 
             spark.config().setDocumentTitle("NovaQA Automation Report");
             spark.config().setReportName("UI Automation Test Execution");

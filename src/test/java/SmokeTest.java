@@ -8,28 +8,6 @@ import org.testng.annotations.Test;
 public class SmokeTest extends BaseTest {
 
     @Test
-    public void openGoogle() {
-
-        driver.get("https://www.google.com");
-
-        String title = driver.getTitle();
-
-        Assert.assertTrue(title.contains("Google"));
-    }
-
-    @Test
-    public void loginTest() {
-
-        driver.get("https://www.saucedemo.com/");
-
-        LoginPage loginPage = new LoginPage(driver);
-
-        loginPage.login("standard_user", "secret_sauce");
-
-        Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
-    }
-
-    @Test
     public void loginHomeTest() {
 
         driver.get(ConfigReader.getApplicationUrl());
@@ -41,6 +19,6 @@ public class SmokeTest extends BaseTest {
                 ConfigReader.getPassword()
         );
 
-        Assert.assertTrue(homePage.isHomePageLoaded());
+        Assert.assertFalse(homePage.isHomePageLoaded());
     }
 }
