@@ -43,7 +43,7 @@ Thumbs.db
 .idea/
 
 # Reports
-reports/
+/reports/
 
 # Screenshots
 screenshots/
